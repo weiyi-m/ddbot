@@ -14,24 +14,31 @@ for (const file of commandFiles) {
 
 const cooldowns = new Discord.Collection();
 
+// startup message
 client.once('ready', () => {
 	console.log('Alright, I\'m in the system, chief. Go ahead!');
 });
 
 client.on('message', message => {
+	
+	// return if message doesn't start with prefix OR message is sent by a bot
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
-
+	
+	// get command from the commands folder
 	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-
+	
+	// if there's no commandName found in the commands folder, return
 	if (!client.commands.has(commandName)) return;
-
+	
+	// cooldowns (not sure if it properly functions currently
+	// TODO: make this work
 	if (!cooldowns.has(command.name)) {
 		cooldowns.set(command.name, new Discord.Collection());
 	}
-
+	
 	const now = Date.now();
 	const timestamps = cooldowns.get(command.name);
 	const cooldownAmount = (command.cooldown || 2) * 1000;
@@ -47,15 +54,19 @@ client.on('message', message => {
 		timestamps.set(message.author.id, now);
 		setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 	}
-
+	
+	// execute command, return error message if present
 	try {
 		command.execute(message, args, client);
 	} catch (error) {
 		console.error(error);
-		message.reply('there was an error trying to execute that command!');
+		message.reply('something went wrong, code must be broken or something.');
 	}
 });
 
+// the entirety of this chunk is still in progress
+// it's to send a welcome message whenever a member joins the guild
+// something went wrong with the member.createdAt so i'm excluding this bit out so that i can work on it
 /*
 client.on('guildMemberAdd', member => {
 	const guild = client.guilds.cache.get('756902642768150538');
@@ -68,6 +79,7 @@ client.on('guildMemberAdd', member => {
 })
 */
 
+// basic error logging, nothing much to see
 client.on('shardError', error => {
     console.error('A websocket connection encountered an error:', error);
 })
@@ -76,4 +88,5 @@ process.on('unhandledRejection', error => {
     console.error('Unhandled promise rejection:', error);
 })
 
+// if all goes well,
 client.login(token);
