@@ -1,7 +1,7 @@
 {
   "name": "ddbot",
   "version": "1.0.0",
-  "description": "A unique Discord bot written in discord.js .",
+  "description": "A semi-decent Discord bot written in discord.js .",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +23,10 @@
     "ddbot",
     "discord.js",
     "discord",
-    "dank daily"
+    "dank daily",
+    "dank memer",
+    "daily community",
+    "dank",
+    "custom"
   ]
 }
