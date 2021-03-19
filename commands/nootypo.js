@@ -1,3 +1,6 @@
+// this command was used to poke fun at a certain Discord user prominent at committing comedic typos
+// "[p]nootypo length" shows the number of typos available in nooArray
+
 const Discord = require('discord.js')
 
 module.exports = {
