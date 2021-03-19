@@ -1,3 +1,6 @@
+// don't think this works.
+// command triggers a fake member join, so that it triggers the welcome message which also doesn't work
+
 const { faMarsDouble } = require('@fortawesome/free-solid-svg-icons');
 const { Channel } = require('discord.js');
 const { ownerID } = require('../ddconfig.json')
