@@ -1,3 +1,5 @@
+// dank daily carl bot tag
+
 const Discord = require('discord.js')
 
 module.exports = {
