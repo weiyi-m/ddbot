@@ -1,3 +1,5 @@
+// commands r1.js - r14.js list the various Dank Daily server rules.
+
 const Discord = require('discord.js')
 
 module.exports = {
