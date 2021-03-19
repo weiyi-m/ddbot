@@ -1,3 +1,7 @@
+// owner-only command
+// run anything you want in the comfort of your own discord server
+// think this code was borrowed from another project
+
 const { inspect } = require("util");
 const { ownerID } = require("../ddconfig.json")
 // const fetch = require("node-fetch");

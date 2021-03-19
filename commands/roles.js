@@ -1,3 +1,5 @@
+// quick important dank daily role list
+
 const Discord = require('discord.js')
 
 module.exports = {

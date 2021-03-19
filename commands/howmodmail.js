@@ -1,3 +1,5 @@
+// this is dank daily stuff. was trying to remake the carl bot tags
+
 const Discord = require('discord.js')
 
 module.exports = {

@@ -1,3 +1,7 @@
+// avatar command, shows user avatar in an embed
+// ping a user to see their avatar
+// remember having some trouble with this, not sure if it still works
+
 const Discord = require('discord.js')
 
 module.exports = {

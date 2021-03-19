@@ -1,3 +1,7 @@
+// :smile: faq command for this bot
+// the "how do I gain coins" part is misleading. there's no currency system in this bot. 
+// truth is, another user was starting work on a bot for dank daily, but because it was written in a "fake" programming language i decided to convert it to js
+
 const { faMarsDouble } = require("@fortawesome/free-solid-svg-icons");
 const { DiscordAPIError } = require("discord.js");
 

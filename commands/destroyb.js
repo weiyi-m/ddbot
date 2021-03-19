@@ -1,3 +1,7 @@
+// "self-destruct" command, the b in destroyb stands for bot
+// ends client by itself so that it can be restarted easily
+// definitely not the most efficient way but hey, it works sometimes
+
 const { Channel } = require("discord.js")
 
 module.exports = {

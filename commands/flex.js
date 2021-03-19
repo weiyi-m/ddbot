@@ -1,3 +1,6 @@
+// only certain people can use this command
+// is this elitism?
+
 const { faMarsDouble } = require("@fortawesome/free-solid-svg-icons");
 
 module.exports = {

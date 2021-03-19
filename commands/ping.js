@@ -1,3 +1,7 @@
+// ping command
+// it doesn't work, Date.now() - message.createdTimestamp isn't a very good way to show ping
+// sometimes it gives negative numbers
+
 module.exports = {
     name: 'ping',
     description: "Sends your ping in milliseconds so that you can either flex or cry about your internet.",

@@ -1,3 +1,5 @@
+// thanks a user for boosting the server
+
 const { faMarsDouble } = require("@fortawesome/free-solid-svg-icons");
 const Discord = require('discord.js')
 

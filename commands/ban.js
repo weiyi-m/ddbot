@@ -1,3 +1,6 @@
+// a ban command but this.... doesn't work
+// everything is commented out because i meant to continue work on this but bot was discontinued
+
 /*const Discord = require('discord.js')
 
 module.exports = {

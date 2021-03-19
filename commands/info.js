@@ -1,3 +1,8 @@
+// info command for the bot
+// suprery and res. were the initial developers of this bot
+// i merely remade the bot in discord.js
+// uptime doesn't work so i removed it(?)
+
 const Discord = require('discord.js')
 
 module.exports = {

@@ -1,3 +1,5 @@
+// coinflip command, 50/50
+
 const Discord = require('discord.js')
 
 module.exports = {

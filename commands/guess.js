@@ -1,3 +1,5 @@
+// unfinished guessthenumber command
+
 module.exports = {
     name: "guess",
     description: "guess this number you idiot",
