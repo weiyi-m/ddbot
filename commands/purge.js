@@ -1,3 +1,5 @@
+// semi-functional delete message bot
+
 module.exports = {
   name: 'purge',
   description: 'delete a certain number of messages',
