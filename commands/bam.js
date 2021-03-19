@@ -1,3 +1,6 @@
+// joke ban command, doesn't actually ban anyone
+// should've renamed command to "bon", seems more mainstream these days
+
 module.exports = {
     name: "bam",
     description: "Oops haha my finger slipped uh oh banned haha lololol",
