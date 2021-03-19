@@ -1,3 +1,5 @@
+// joke kick command
+
 module.exports = {
     name: "kik",
     description: "kik. kik. kik.",
