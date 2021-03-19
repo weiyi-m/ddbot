@@ -1,3 +1,6 @@
+// a Command RELOAD command, CRELOAD
+// and that's my discord user id below, it only works if the creator of the bot uses the command
+
 module.exports = {
 	name: 'creload',
 	description: 'Reloads a command',
