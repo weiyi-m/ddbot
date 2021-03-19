@@ -1,3 +1,6 @@
+// unban command, not sure if functional
+// description kinda funny though
+
 const Discord = require('discord.js')
 
 module.exports = {
