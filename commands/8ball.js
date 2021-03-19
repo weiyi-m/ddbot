@@ -1,3 +1,6 @@
+// just a normal 8ball command
+// ask a question and it'll help you to decide everything in your life because it's totally random
+
 const { DiscordAPIError } = require("discord.js");
 
 const Discord = require('discord.js')
