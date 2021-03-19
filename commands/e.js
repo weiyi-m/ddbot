@@ -1,3 +1,6 @@
+// joke reponse command
+// just "E"
+
 const Discord = require('discord.js')
 
 module.exports = {
